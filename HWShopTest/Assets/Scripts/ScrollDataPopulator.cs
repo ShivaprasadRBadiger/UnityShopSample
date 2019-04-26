@@ -39,6 +39,7 @@ public class ScrollDataPopulator : MonoBehaviour
 	{
 		if (dataSet == null)
 		{
+			gameObject.SetActive(false);
 			return;
 		}
 		monthsPriceDataset = dataSet;
@@ -46,7 +47,6 @@ public class ScrollDataPopulator : MonoBehaviour
 		{
 			scrollCells[i].SetScrolldata(ref monthsPriceDataset);
 		}
-
 		infScrollRect.virtualElements = monthsPriceDataset.musky_and_price.Length;
 		infScrollRect.Init();
 	}
@@ -54,9 +54,11 @@ public class ScrollDataPopulator : MonoBehaviour
 	{
 		if (dataSet == null)
 		{
+			gameObject.SetActive(false);
 			return;
 		}
 		coinsPriceDataset = dataSet;
+
 		for (int i = 0; i < scrollCells.Length; i++)
 		{
 			scrollCells[i].SetScrolldata(ref coinsPriceDataset);
