@@ -129,8 +129,8 @@ GameObject:
   - component: {fileID: 3300697985370436682}
   - component: {fileID: 3300697985370436685}
   - component: {fileID: 3300697985370436686}
-  - component: {fileID: 3300697985370436687}
   - component: {fileID: 3300697985370436680}
+  - component: {fileID: 8993864753704451618}
   - component: {fileID: 3300697985370436681}
   - component: {fileID: 3300697985370436684}
   m_Layer: 5
@@ -197,19 +197,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &3300697985370436687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3300697985370436683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
 --- !u!114 &3300697985370436680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +229,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &8993864753704451618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300697985370436683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -146154839, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3300697985370436681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1100,6 +1099,16 @@ PrefabInstance:
       propertyPath: months
       value: 
       objectReference: {fileID: 3300697984356135252}
+    - target: {fileID: 2289168574812715627, guid: fed659820b97bf14a8b8ef1c3a393384,
+        type: 3}
+      propertyPath: m_FillCenter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289168574812715627, guid: fed659820b97bf14a8b8ef1c3a393384,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2289168574372055852, guid: fed659820b97bf14a8b8ef1c3a393384,
         type: 3}
       propertyPath: m_TargetGraphic
