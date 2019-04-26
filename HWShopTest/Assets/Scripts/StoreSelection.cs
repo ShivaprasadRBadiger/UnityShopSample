@@ -12,7 +12,8 @@ public class StoreSelection : MonoBehaviour
 
 	[SerializeField]
 	Toggle kitPanelButton, hwCoinPanelButton, monthsPricePanel;
-
+	[SerializeField]
+	Text title;
 	[SerializeField]
 	Animator kitPanel, hwCoinPanel, monthPricePanel;
 	private void Awake()
@@ -32,34 +33,16 @@ public class StoreSelection : MonoBehaviour
 		switch (panelButton.gameObject.name)
 		{
 			case "Special":
-				if (value)
-				{
-					kitPanel.SetTrigger("Enter");
-				}
-				else
-				{
-					kitPanel.SetTrigger("Exit");
-				}
+				kitPanel.SetBool("Shown", value);
+				title.text = string.Empty;
 				break;
 			case "Hitcoins":
-				if (value)
-				{
-					hwCoinPanel.SetTrigger("Enter");
-				}
-				else
-				{
-					hwCoinPanel.SetTrigger("Exit");
-				}
+				hwCoinPanel.SetBool("Shown", value);
+				title.text = panelButton.gameObject.name.ToUpper();
 				break;
 			case "Musketeer":
-				if (value)
-				{
-					monthPricePanel.SetTrigger("Enter");
-				}
-				else
-				{
-					monthPricePanel.SetTrigger("Exit");
-				}
+				monthPricePanel.SetBool("Shown", value);
+				title.text = panelButton.gameObject.name.ToUpper();
 				break;
 		}
 	}
